@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zh.css">
+</head>
+
+<body>
+
+    <div id="kozepreigazitott">
+        <h1>WEB-PROGRAMOZÁS I.</h1>
+        <h2>Rendelés:</h2>
+        <h3>A termék korlátozott számban áll rendelkezésre!</h3>
+        <div class="balkontener">
+
+            <form onsubmit="return ellenoriz()" method="post" action="adatlap.php">
+
+
+
+
+                <div class="formmezo">
+                    <label>Név</label>
+                    <input type="text" name="name" id="name" size="20" maxlength="40">
+                </div>
+
+                <div class="formmezo">
+                    <label>Telefon</label>
+                    <input type="tel" name="telefon" id="telefon" size="9" maxlength="9">
+                </div>
+
+
+                <div class="formmezo">
+                    <label>Darab</label>
+                    <input type="number" name="db" min="1" max="10" id="db">
+                </div>
+
+                <div class="formmezo">
+                    <label>Átvétel</label>
+                    <select id="atvetel">
+                        <option value="balasszon">Válasszon... </option>
+                        <option value="„boltunkban">„Boltunkban </option>
+                        <option value="hazhozszállítás">Házhoz szállítás. </option>
+                    </select>
+                </div>
+
+
+
+                <div class="formmezo">
+                    <label></label>
+                    <input type="submit" value="Megrendelem" id="submit">
+                </div>
+
+            </form>
+            <script type="text/javascript" src="regisztracio.js"></script>
+        </div>
+        <div class="jobbkontener">
+            <img src="kep.jpg" class="kep">
+        </div>
+
+    </div>
+
+
+
+    </form>
+
+
+
+    <script type="text/javascript" src="zh.js"></script>
+</body>
+
+</html>
